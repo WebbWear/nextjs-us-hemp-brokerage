@@ -35,7 +35,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
+        brand="JW"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -81,11 +81,11 @@ export default function AboutUsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-about-us"
+                    href="/"
                     className={classes.block}
-                    target="_blank"
+                    target="_self"
                   >
-                    Creative Tim
+                    US Hemp Brokerage
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>

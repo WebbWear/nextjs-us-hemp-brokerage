@@ -47,7 +47,7 @@ export default function SectionHeaders({ ...rest }) {
       <div>
         <Header
           absolute
-          brand="Creative Tim"
+          brand="Creative Jeff"
           color="transparent"
           links={
             <div className={classes.collapse}>

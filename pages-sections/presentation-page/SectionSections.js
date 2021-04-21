@@ -14,7 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import sectionsStyle from "assets/jss/nextjs-material-kit-pro/pages/presentationSections/sectionsStyle.js";
 
 // images array used in rendering a function for this section
-import imgs from "assets/img/assets-for-demo/sections/imgs.js";
+import imgs from "assets/img/assets-for-brands/imgs.js";
 
 const useStyles = makeStyles(sectionsStyle);
 
@@ -33,7 +33,7 @@ export default function SectionSections() {
                 className={cssClass}
               >
                 <img
-                  src={require(`assets/img/assets-for-demo/sections/${el}.jpg`)}
+                  src={require(`assets/img/assets-for-brands/${el}.jpg`)}
                   alt={el}
                   key={el[index]}
                 />

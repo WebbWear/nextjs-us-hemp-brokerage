@@ -11,7 +11,7 @@ import {
 const headersSection = theme => ({
   ...headerLinksStyle(theme),
   sectionBlank: {
-    height: "70px",
+    height: "0px",
     display: "block"
   },
   container: {

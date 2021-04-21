@@ -112,7 +112,7 @@ export default function Components() {
         }}
       />
       <Parallax
-        image={require("assets/img/nextjs_header.jpg")}
+        image={require("assets/img/cropped-hemp_farm-dark.jpg")}
         className={classes.parallax}
       >
         <div className={classes.container}>

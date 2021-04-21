@@ -14,8 +14,6 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import Image from "next/image";
-
 // sections for this page
 import SectionDescription from "pages-sections/presentation-page/SectionDescription.js";
 import SectionComponents from "pages-sections/presentation-page/SectionComponents.js";
@@ -26,7 +24,6 @@ import SectionExamples from "pages-sections/presentation-page/SectionExamples.js
 import SectionFreeDemo from "pages-sections/presentation-page/SectionFreeDemo.js";
 import SectionOverview from "pages-sections/presentation-page/SectionOverview.js";
 import SectionPricing from "pages-sections/presentation-page/SectionPricing.js";
-// import SectionFooter from "pages-sections/presentation-page/SectionFooter.js"
 
 import presentationStyle from "assets/jss/nextjs-material-kit-pro/pages/presentationStyle.js";
 
@@ -41,7 +38,7 @@ export default function PresentationPage() {
   return (
     <div>
       <Header
-        brand="US Hemp Brokerage"
+        brand="NextJS Material Kit PRO"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -58,16 +55,13 @@ export default function PresentationPage() {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-              <Image
-                alt="US Hemp Brokerage logo"
-                src="/assets/img/USHB-logo.png"
-                width={500}
-                height={500}
-                priority
-              />
-                <h1 className={classes.title}>
-                  The Leader in Hemp Brokerage Services
+                <h1>
+                  NextJS Material Kit
+                  <span className={classes.proBadge}>PRO</span>
                 </h1>
+                <h3 className={classes.title}>
+                  A Badass Material-UI Kit based on Material Design.
+                </h3>
               </div>
             </GridItem>
           </GridContainer>
@@ -94,7 +88,7 @@ export default function PresentationPage() {
                 target="_blank"
                 className={classes.footerBrand}
               >
-                US Hemp Brokerage
+                NextJS Material Kit PRO
               </a>
             </div>
             <div className={classes.pullCenter}>
@@ -105,7 +99,7 @@ export default function PresentationPage() {
                     target="_blank"
                     className={classes.block}
                   >
-                    Creative Tim
+                    Home
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>

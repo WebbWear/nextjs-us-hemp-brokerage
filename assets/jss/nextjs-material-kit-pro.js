@@ -55,7 +55,7 @@ const hexToRgb = input => {
 const drawerWidth = 260;
 
 const primaryColor = [
-  "#9c27b0",
+  "#b9a360",
   "#ab47bc",
   "#8e24aa",
   "#af2cc5",
@@ -94,7 +94,7 @@ const successColor = [
   "#66bb6a"
 ];
 const infoColor = [
-  "#00acc1",
+  "#343434",
   "#26c6da",
   "#00acc1",
   "#00d3ee",

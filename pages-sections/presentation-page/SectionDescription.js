@@ -19,11 +19,11 @@ export default function SectionDescription() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <div className={classes.container}>
+      <div className={classes.container}> 
         <GridContainer justify="center">
           <GridItem md={8} sm={8}>
             <h4 className={classes.description}>
-              NextJS Material Kit PRO is a Material-UI and NextJS Kit with a
+              This is a change______NextJS Material Kit PRO is a Material-UI and NextJS Kit with a
               fresh, new design inspired by Google{"'"}s Material Design. You
               asked for it, so we built it. It{"'"}s a great pleasure to
               introduce to you the material concepts in an easy to use and

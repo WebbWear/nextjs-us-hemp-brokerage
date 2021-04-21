@@ -10,6 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Icon from "@material-ui/core/Icon";
+import Button from "components/CustomButtons/Button.js";
+
 import Hidden from "@material-ui/core/Hidden";
 
 // @material-ui/icons
@@ -41,7 +43,7 @@ import Error from "@material-ui/icons/Error";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
-import Button from "components/CustomButtons/Button.js";
+// import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/nextjs-material-kit-pro/components/headerLinksStyle.js";
 
@@ -91,6 +93,46 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list + " " + classes.mlAuto}>
+      <ListItem className={classes.listItem}>
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    Home
+                  </Button>
+                </ListItem>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    About us
+                  </Button>
+                </ListItem>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    Products
+                  </Button>
+                </ListItem>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    Contact us
+                  </Button>
+                </ListItem>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -285,30 +327,6 @@ export default function HeaderLinks(props) {
             </Link>
           ]}
         />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Hidden mdDown>
-          <Button
-            href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-navbar"
-            color={"white"}
-            target="_blank"
-            className={classes.navButton}
-            round
-          >
-            <ShoppingCart className={classes.icons} /> buy now
-          </Button>
-        </Hidden>
-        <Hidden mdUp>
-          <Button
-            href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-navbar"
-            color={"info"}
-            target="_blank"
-            className={classes.navButton}
-            round
-          >
-            <ShoppingCart className={classes.icons} /> buy now
-          </Button>
-        </Hidden>
       </ListItem>
     </List>
   );
