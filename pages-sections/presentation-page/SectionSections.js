@@ -54,12 +54,10 @@ export default function SectionSections() {
             className={classNames(classes.mrAuto, classes.mlAuto)}
           >
             <div className={classes.sectionDescription}>
-              <h2 className={classes.title}>Ready to Use Sections</h2>
+              <h2 className={classes.title}>HEMP PRODUCT SHOWCASE</h2>
               <h5 className={classes.description}>
-                Build your page section by section! We have created multiple
-                options for you to put together and customise into pixel perfect
-                pages. From headers to footers, you will be able to choose the
-                best combination for your project.
+              There are so many hemp choices that you can make – we recommend working hemp into your food, medicinal and clothing purchases so you are able to gradually incorporate hemp into your life. 
+              The brands showcased by our firm are representative of just a few of the many types of products we sponsor and support.  We have longstanding relationships with brands, distributors and wholesale or retail clients.  We have the expertise, the success record and the wisdom to help you deliver high-quality hemp products at extremely competitive prices, with plenty of margin for your business to thrive.
               </h5>
               <Link href={"/sections"}>
                 <Button
