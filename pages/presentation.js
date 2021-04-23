@@ -75,13 +75,13 @@ export default function PresentationPage() {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionDescription />
-        <SectionComponents />
+        {/* <SectionComponents /> */}
         <SectionCards />
-        <SectionContent />
+        {/* <SectionContent /> */}
         <SectionSections />
-        <SectionExamples />
-        <SectionFreeDemo />
-        <SectionOverview />
+        {/* <SectionExamples /> */}
+        {/* <SectionFreeDemo /> */}
+        {/* <SectionOverview /> */}
       </div>
       <SectionPricing />
       <Footer

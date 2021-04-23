@@ -2,6 +2,7 @@ import {
   container,
   section,
   sectionDark,
+  sectionGreen,
   sectionDescription,
   title,
   whiteColor,
@@ -15,6 +16,7 @@ const cardsStyle = {
     padding: "50px 0px"
   },
   sectionDark,
+  sectionGreen,
   container,
   sectionDescription,
   title: {

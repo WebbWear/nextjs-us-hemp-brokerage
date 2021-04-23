@@ -15,6 +15,7 @@ import sectionsStyle from "assets/jss/nextjs-material-kit-pro/pages/presentation
 
 // images array used in rendering a function for this section
 import imgs from "assets/img/assets-for-brands/imgs.js";
+import { sectionGreen } from "../../assets/jss/nextjs-material-kit-pro";
 
 const useStyles = makeStyles(sectionsStyle);
 
@@ -46,6 +47,8 @@ export default function SectionSections() {
   };
   const classes = useStyles();
   return (
+    // <div className={classNames(classes.section, classes.sectionDark)}>
+
     <div className={classes.sectionSections}>
       <div className={classes.container}>
         <GridContainer justify="center">
@@ -59,14 +62,14 @@ export default function SectionSections() {
               There are so many hemp choices that you can make – we recommend working hemp into your food, medicinal and clothing purchases so you are able to gradually incorporate hemp into your life. 
               The brands showcased by our firm are representative of just a few of the many types of products we sponsor and support.  We have longstanding relationships with brands, distributors and wholesale or retail clients.  We have the expertise, the success record and the wisdom to help you deliver high-quality hemp products at extremely competitive prices, with plenty of margin for your business to thrive.
               </h5>
-              <Link href={"/sections"}>
+              <Link href={"https://shop.ushempbrokerage.com/en"}>
                 <Button
                   color="rose"
                   target="_blank"
                   className={classes.navButton}
                   round
                 >
-                  view all sections
+                  shop products
                 </Button>
               </Link>
             </div>

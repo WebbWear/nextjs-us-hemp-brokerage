@@ -132,6 +132,12 @@ const grayColor = [
   "#505050",
   "#1f1f1f"
 ];
+const greenColor = [
+  "#767769",
+  "#000",
+  "fff"
+];
+
 const whiteColor = "#FFF";
 const blackColor = "#000";
 const twitterColor = "#55acee";
@@ -395,6 +401,16 @@ const sectionDark = {
     " 100%)"
 };
 
+const sectionGreen = {
+  backgroundColor: greenColor[0],
+  background:
+    "radial-gradient(ellipse at center," +
+    greenColor[2] +
+    " 0," +
+    greenColor[3] +
+    " 50%)"
+};
+
 const sectionDescription = {
   marginTop: "130px"
 };
@@ -493,5 +509,7 @@ export {
   mrAuto,
   btnLink,
   coloredShadow,
-  hexToRgb
+  hexToRgb,
+  greenColor,
+  sectionGreen
 };
