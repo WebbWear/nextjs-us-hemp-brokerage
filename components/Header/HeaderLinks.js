@@ -105,12 +105,12 @@ export default function HeaderLinks(props) {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href="/"
                     className={classes.navLink}
                     onClick={e => e.preventDefault()}
                     color="transparent"
                   >
-                    About us
+                    About
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
@@ -158,7 +158,7 @@ export default function HeaderLinks(props) {
               </a>
             </Link>,
             <a
-              href="https://demos.creative-tim.com/nextjs-material-kit-pro/documentation/tutorial?ref=njsmkp-navbar"
+              href="https://webbwear.com"
               target="_blank"
               className={classes.dropdownLink}
             >
@@ -328,6 +328,69 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          navDropdown
+          hoverColor={dropdownHoverColor}
+          buttonText="Brands"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          // buttonIcon={ViewCarousel}
+          dropdownList={[
+            <Link href="/about-us">
+              <a className={classes.dropdownLink}>
+                 Willie’s Remedy
+              </a>
+            </Link>,
+            <Link href="/blog-post">
+              <a className={classes.dropdownLink}>
+                Wanna Wellness
+              </a>
+            </Link>,
+            <Link href="/blog-posts">
+              <a className={classes.dropdownLink}>
+                Plain Jane
+              </a>
+            </Link>,
+            <Link href="/contact-us">
+              <a className={classes.dropdownLink}>
+                Pure Kind Botanicals
+              </a>
+            </Link>,
+            <Link href="/landing-page">
+              <a className={classes.dropdownLink}>
+                Hemp Luxe
+              </a>
+            </Link>,
+            <Link href="/login">
+              <a className={classes.dropdownLink}>
+                bRise
+              </a>
+            </Link>,
+            <Link href="/pricing">
+              <a className={classes.dropdownLink}>
+                Star Farm Organics
+              </a>
+            </Link>,
+            <Link href="/shopping-cart">
+              <a className={classes.dropdownLink}>
+                Urban Alchemy CBD
+              </a>
+            </Link>,
+            <Link href="/ecommerce">
+              <a className={classes.dropdownLink}>
+                Restorative Botanicals
+              </a>
+            </Link>
+          ]}
+        />
+      </ListItem>
+
+
     </List>
   );
 }
