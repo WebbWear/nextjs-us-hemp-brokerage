@@ -94,45 +94,41 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Home
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="/"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    About
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Products
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Contact us
-                  </Button>
-                </ListItem>
+          <Button
+            href="/"
+            className={classes.navLink}
+            color="transparent"
+          >
+            Home
+          </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Button
+            href="/about-us"
+            className={classes.navLink}
+            color="transparent"
+          >
+            About
+          </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Button
+            href="https://shop.ushempbrokerage.com/en"
+            className={classes.navLink}
+            color="transparent"
+          >
+            Products
+          </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Button
+            href="/contact-us"
+            className={classes.navLink}
+            color="transparent"
+          >
+            Contact us
+          </Button>
+        </ListItem>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -341,12 +337,12 @@ export default function HeaderLinks(props) {
           }}
           // buttonIcon={ViewCarousel}
           dropdownList={[
-            <Link href="/about-us">
+            <Link href="/willies-remedy">
               <a className={classes.dropdownLink}>
                  Willie’s Remedy
               </a>
             </Link>,
-            <Link href="/blog-post">
+            <Link href="/wanna-wellness">
               <a className={classes.dropdownLink}>
                 Wanna Wellness
               </a>
@@ -381,7 +377,7 @@ export default function HeaderLinks(props) {
                 Urban Alchemy CBD
               </a>
             </Link>,
-            <Link href="/ecommerce">
+            <Link href="/restorative-botanicals">
               <a className={classes.dropdownLink}>
                 Restorative Botanicals
               </a>

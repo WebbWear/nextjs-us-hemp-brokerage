@@ -35,7 +35,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand="JW"
+        brand=""
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"

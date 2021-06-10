@@ -14,17 +14,15 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import Image from "next/image";
-
 // sections for this page
 import SectionDescription from "pages-sections/presentation-page/SectionDescription.js";
-import SectionComponents from "pages-sections/presentation-page/SectionComponents.js";
+// import SectionComponents from "pages-sections/presentation-page/SectionComponents.js";
 import SectionCards from "pages-sections/presentation-page/SectionCards.js";
 import SectionContent from "pages-sections/presentation-page/SectionContent.js";
 import SectionSections from "pages-sections/presentation-page/SectionSections.js";
-import SectionExamples from "pages-sections/presentation-page/SectionExamples.js";
-import SectionFreeDemo from "pages-sections/presentation-page/SectionFreeDemo.js";
-import SectionOverview from "pages-sections/presentation-page/SectionOverview.js";
+// import SectionExamples from "pages-sections/presentation-page/SectionExamples.js";
+// import SectionFreeDemo from "pages-sections/presentation-page/SectionFreeDemo.js";
+// import SectionOverview from "pages-sections/presentation-page/SectionOverview.js";
 import SectionPricing from "pages-sections/presentation-page/SectionPricing.js";
 // import SectionFooter from "pages-sections/presentation-page/SectionFooter.js"
 
@@ -58,13 +56,6 @@ export default function PresentationPage() {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-              <Image
-                alt="US Hemp Brokerage logo"
-                src="/assets/img/USHB-logo.png"
-                width={500}
-                height={500}
-                priority
-              />
                 <h1 className={classes.title}>
                   The Leader in Hemp Brokerage Services
                 </h1>

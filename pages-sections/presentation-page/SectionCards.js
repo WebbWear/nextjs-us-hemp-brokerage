@@ -21,30 +21,9 @@ export default function SectionCards() {
   return (
     <div className={classNames(classes.section, classes.sectionGreen)}>
       <div className={classes.container}>
-        <GridContainer justify="center">
-          {/* <GridItem md={7} sm={7}>
-            <div className={classes.imageContainer}>
-              <img src={cardsTest} alt="views" />
-            </div>
-          </GridItem>
-          <GridItem md={4} sm={5} className={classes.mlAuto}>
-            <div className={classes.sectionDescription}>
-              <h3 className={classes.title}>Unconventional Cards</h3>
-              <h6 className={classes.description}>
-                One Card for Every Problem
-              </h6>
-              <h5 className={classes.description}>
-                We love cards and everybody on the web seems to. We have gone
-                above and beyond with options for you to organise your
-                information. From cards designed for blog posts, to product
-                cards or user profiles, you will have many options to choose
-                from. All the cards follow the material principles and have a
-                design that stands out.
-              </h5>
-            </div>
-          </GridItem> */}
+        {/* <GridContainer justify="center">
 
-<GridItem
+          <GridItem
             md={8}
             className={classNames(classes.mrAuto, classes.mlAuto)}
           >
@@ -66,7 +45,7 @@ export default function SectionCards() {
               </Link>
             </div>
           </GridItem>
-        </GridContainer>
+        </GridContainer> */}
       </div>
     </div>
   );
