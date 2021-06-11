@@ -337,47 +337,47 @@ export default function HeaderLinks(props) {
           }}
           // buttonIcon={ViewCarousel}
           dropdownList={[
-            <Link href="/willies-remedy">
+            <Link href="/brand-pages/willies-remedy">
               <a className={classes.dropdownLink}>
                  Willie’s Remedy
               </a>
             </Link>,
-            <Link href="/wanna-wellness">
+            <Link href="/brand-pages/wanna-wellness">
               <a className={classes.dropdownLink}>
                 Wanna Wellness
               </a>
             </Link>,
-            <Link href="/blog-posts">
+            <Link href="/brand-pages/plain-jane">
               <a className={classes.dropdownLink}>
                 Plain Jane
               </a>
             </Link>,
-            <Link href="/contact-us">
+            <Link href="/brand-pages/pure-kind-botanicals">
               <a className={classes.dropdownLink}>
                 Pure Kind Botanicals
               </a>
             </Link>,
-            <Link href="/landing-page">
+            <Link href="/brand-pages/hemp-luxe">
               <a className={classes.dropdownLink}>
                 Hemp Luxe
               </a>
             </Link>,
-            <Link href="/login">
+            <Link href="/brand-pages/brise">
               <a className={classes.dropdownLink}>
                 bRise
               </a>
             </Link>,
-            <Link href="/pricing">
+            <Link href="/brand-pages/star-farm-organics">
               <a className={classes.dropdownLink}>
                 Star Farm Organics
               </a>
             </Link>,
-            <Link href="/shopping-cart">
+            <Link href="/brand-pages/urban-alchemy-cbd">
               <a className={classes.dropdownLink}>
                 Urban Alchemy CBD
               </a>
             </Link>,
-            <Link href="/restorative-botanicals">
+            <Link href="/brand-pages/restorative-botanicals">
               <a className={classes.dropdownLink}>
                 Restorative Botanicals
               </a>

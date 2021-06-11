@@ -3,8 +3,6 @@ import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
-// import List from "@material-ui/core/List";
-// import ListItem from "@material-ui/core/ListItem";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
@@ -15,7 +13,7 @@ import brandPageStyle from "assets/jss/nextjs-material-kit-pro/pages/brandPageSt
 const useStyles = makeStyles(brandPageStyle);
 
 
-export default function wannaWellness() {
+export default function brandPage() {
     React.useEffect(() => {
       window.scrollTo(0, 0);
       document.body.scrollTop = 0;
@@ -33,25 +31,25 @@ export default function wannaWellness() {
                 color: "info"
                 }}
             />
-            <Parallax image={require("assets/img/hemp-field-sun.jpg")} filter="dark" small>
-        <div className={classes.container}>
-          <GridContainer justify="center">
-            <GridItem
-              md={8}
-              sm={8}
-              className={classNames(
-                classes.mlAuto,
-                classes.mrAuto,
-                classes.textCenter
-              )}
-            >
-              <h1 className={classes.title}>Wanna Wellness</h1>
-              
-            </GridItem>
-          </GridContainer>
-        </div>
-      </Parallax>
-            <h1>Wanna Wellness</h1>
+            <Parallax image={require("assets/img/leaf.jpg")} filter="dark" small>
+              <div className={classes.container}>
+                <GridContainer justify="center">
+                  <GridItem
+                    md={8}
+                    sm={8}
+                    className={classNames(
+                      classes.mlAuto,
+                      classes.mrAuto,
+                      classes.textCenter
+                    )}
+                  >
+                    <h1 className={classes.title}>Willie's Remedy</h1>
+                    
+                  </GridItem>
+                </GridContainer>
+              </div>
+            </Parallax>
+            <h1>Willie's Remedy</h1>
         </div>
     )
 }
