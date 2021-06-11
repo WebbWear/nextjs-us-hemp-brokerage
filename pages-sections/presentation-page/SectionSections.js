@@ -15,7 +15,6 @@ import sectionsStyle from "assets/jss/nextjs-material-kit-pro/pages/presentation
 
 // images array used in rendering a function for this section
 import imgs from "assets/img/assets-for-brands/imgs.js";
-import { sectionGreen } from "../../assets/jss/nextjs-material-kit-pro";
 
 const useStyles = makeStyles(sectionsStyle);
 
@@ -33,11 +32,13 @@ export default function SectionSections() {
                 key={el + "_" + index}
                 className={cssClass}
               >
+                <a href="https://www.jeffwebb.dev/" alt="nothing">
                 <img
                   src={require(`assets/img/assets-for-brands/${el}.jpg`)}
                   alt={el}
                   key={el[index]}
                 />
+                </a>
               </GridItem>
             );
           })}
@@ -47,8 +48,6 @@ export default function SectionSections() {
   };
   const classes = useStyles();
   return (
-    // <div className={classNames(classes.section, classes.sectionDark)}>
-
     <div className={classes.sectionSections}>
       <div className={classes.container}>
         <GridContainer justify="center">
