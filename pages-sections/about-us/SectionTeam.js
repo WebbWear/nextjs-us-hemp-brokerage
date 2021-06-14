@@ -14,10 +14,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import teamStyle from "assets/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js";
 
-import FaceMarc from "assets/img/faces/marc.jpg";
-import FaceChristian from "assets/img/faces/christian.jpg";
-import FaceKendall from "assets/img/faces/kendall.jpg";
-import FaceAvatar from "assets/img/faces/avatar.jpg";
+import FaceJWebb from "assets/img/faces/jwebb.jpg";
+import FaceJCole from "assets/img/faces/jeff-cole.jpg";
+import FaceJill from "assets/img/faces/jill-hodges.jpg";
+import FaceChelsie from "assets/img/faces/chelsie.jpg";
 
 const useStyles = makeStyles(teamStyle);
 
@@ -45,9 +45,9 @@ export default function SectionTeam() {
       <GridContainer>
         <GridItem md={3} sm={3}>
           <Card profile plain>
-            <CardAvatar profile plain>
+            <CardAvatar profile plain  variant="square" className={classes.square}>
               <a href="#pablo">
-                <img src={FaceMarc} alt="profile-pic" className={classes.img} />
+                <img src={FaceJCole} alt="profile-pic" className={classes.img} />
               </a>
             </CardAvatar>
             <CardBody plain>
@@ -76,7 +76,7 @@ export default function SectionTeam() {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceKendall}
+                  src={FaceJill}
                   alt="profile-pic"
                   className={classes.img}
                 />
@@ -108,7 +108,7 @@ export default function SectionTeam() {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceChristian}
+                  src={FaceJWebb}
                   alt="profile-pic"
                   className={classes.img}
                 />
@@ -137,7 +137,7 @@ export default function SectionTeam() {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceAvatar}
+                  src={FaceChelsie}
                   alt="profile-pic"
                   className={classes.img}
                 />

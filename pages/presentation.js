@@ -49,8 +49,9 @@ export default function PresentationPage() {
         }}
       />
       <Parallax
-        image={require("assets/img/cropped-hemp_farm-dark.jpg")}
+        image={require("assets/img/raw-hemp-seeds.jpg")}
         className={classes.parallax}
+        filter="dark" small
       >
         <div className={classes.container}>
           <GridContainer>
