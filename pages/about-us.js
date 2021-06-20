@@ -44,7 +44,7 @@ export default function AboutUsPage() {
           color: "info"
         }}
       />
-      <Parallax image={require("assets/img/bg9.jpg")} filter="dark" small>
+      <Parallax image={require("assets/img/hemp-leaf.jpg")} filter="dark" small>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem
@@ -58,8 +58,7 @@ export default function AboutUsPage() {
             >
               <h1 className={classes.title}>About Us</h1>
               <h4>
-                Meet the amazing team behind this project and find out more
-                about how we work.
+                Meet the amazing team behind US Hemp Brokerage.
               </h4>
             </GridItem>
           </GridContainer>

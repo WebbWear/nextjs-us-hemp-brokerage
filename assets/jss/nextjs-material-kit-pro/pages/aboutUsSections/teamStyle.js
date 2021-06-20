@@ -1,3 +1,4 @@
+import { lightGreen } from "@material-ui/core/colors";
 import {
   mrAuto,
   mlAuto,
@@ -34,7 +35,13 @@ const teamStyle = {
   },
   justifyContent: {
     justifyContent: "center!important"
-  }
+  },
+  popupDescription: {
+    color: grayColor[0],
+    margin: 100,
+    width: "75%",
+    height: "auto"
+  },
 };
 
 export default teamStyle;
