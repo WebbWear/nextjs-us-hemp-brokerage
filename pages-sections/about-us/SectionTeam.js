@@ -9,6 +9,7 @@ import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
 import Popover from '@material-ui/core/Popover';
 import Typography from '@material-ui/core/Typography';
+import { TEAM_MEMBERS } from "./constants";
 
 import Button from "components/CustomButtons/Button.js";
 // @material-ui/core components
@@ -21,6 +22,7 @@ import FaceJCole from "assets/img/faces/jeff-cole.jpg";
 import FaceJill from "assets/img/faces/jill-hodges.jpg";
 import FaceChelsie from "assets/img/faces/chelsie.jpg";
 import { lightGreen } from "@material-ui/core/colors";
+import TeamMemberCard from "./TeamMemberCard";
 
 const useStyles = makeStyles(teamStyle);
 
@@ -57,120 +59,14 @@ export default function SectionTeam() {
           </h5>
         </GridItem>
       </GridContainer>
-      <GridContainer>        
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain  variant="square" className={classes.square}>
-              <a href="#pablo">
-                <img src={FaceJCole} alt="profile-pic" className={classes.img} />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Jeffery L Cole</h4>
-              <h6 className={classes.textMuted}>Founder & President</h6>
-              <p className={classes.cardDescription}>
-              Jeffrey Cole is the owner and founder of US Hemp Brokerage LLC, which he established in order to become the leading professional brokerage firm in the domestic hemp markets...
-              </p>
-              <div>
-                <Button aria-describedby={id} variant="contained" color="white" onClick={handleClick}>
-                  Read More
-                </Button>
-                <Popover
-                  id={id}
-                  open={open}
-                  anchorEl={anchorEl}
-                  onClose={handleClose}
-                  anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'center',
-                  }}
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'center',
-                  }}
-                  PaperProps={{
-                    style: { width: '50%' },
-                  }}
-                >
-                  <Typography profile plain className={classes.popupDescription}>
-                      Jeffrey Cole is the owner and founder of US Hemp Brokerage LLC, which he established in order to become the leading professional brokerage firm in the domestic hemp markets. While Jeff formed the company in August of 2018, he has recently nurtured the firm to its official launch on November 1, 2019. He has 7 team members at US Hemp Brokerage and he is based in Boulder County, CO.
-                      Most recently (October 2018 – November 2019), Jeffrey held the position of Director of Program Development with Restorative Botanicals, a leading hemp firm, based in Boulder, CO. While at Restorative, where he accomplished many of his goals, he helped manage the Restorative Botanicals brand products, participated as a leader in the development of the Urban Alchemy brand extension, led the wholesale, broker and direct sales teams and was responsible for the event marketing efforts which include both Natural Product Expos, NOCO, MJ Biz, Southern Hemp Expo, CBD Expos and many others. Additionally, and of paramount priority, Mr. Cole was director of the Restorative Botanicals Private Label programs.Among several major initiatives, his team secured international acclaim for the Restorative Botanicals brand with an advertising campaign in Times Square on New Year’s Eve 2018. This advertising program was brought to Restorative Botanicals by leveraging Jeff’s longstanding relationships and experience in the New York media and advertising industries.
-                      Prior to joining Restorative Botanicals, he held an Executive Manager position at Ft. Lupton based PureHemp Technology LLC, where since 2016, he served as VP of Sales & Marketing for the parent company, Brand Director for Pure Kind Botanicals brand products, and he established the private label offerings for that firm.
-                      All-tolled, Jeffrey Cole has conceived of, managed and/or operated 63 hemp brands through his private label program management.  Mr. Cole’s expertise developing and marketing products in the hemp industry has resulted in dozens of hemp-based personal care, health & beauty and hemp food products reaching national markets and beyond. 
-                      For over 20 years, Mr. Cole has focused on marketing and brand building in major media channels, sustainability and natural products, with a focus on natural consumers in the top 25 US markets. 
-                      Jeffrey is a Colorado native who has worked in natural products in the Denver/Boulder area since 2013, where he served as Advertising Director and senior manager for Boulder Weekly, Best of Boulder and Boulderganic, the leading sustainability magazine serving the Boulder natural product community.  
-                      His thought-leadership with the influential Cultural Creative and LOHAS (Lifestyles of Health and Sustainability) consumer groups consistently delivers successful products to the hemp marketplace.
-                  </Typography>
-                </Popover>
-              </div>
-            </CardBody>
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-                <img
-                  src={FaceJill}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Jill Hodges</h4>
-              <h6 className={classes.textMuted}>Creative Director</h6>
-              <p className={classes.cardDescription}>
-                Jill Hodges is Get Ink PR’s go-to girl when it comes to brand strategy, creative direction and graphic design. Jill’s design roots started in the “dot com” craze as a senior designer...
-              </p>
-              <div>
-                <Button aria-describedby={id} variant="contained" color="white" onClick={handleClick}>
-                  Read More
-                </Button>
-                <Popover
-                  id={id}
-                  open={open}
-                  anchorEl={anchorEl}
-                  onClose={handleClose}
-                  anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'center',
-                  }}
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'center',
-                  }}
-                  PaperProps={{
-                    style: { width: '50%' },
-                  }}
-                >
-                  <Typography profile plain className={classes.popupDescription}>
-                    text
-                  </Typography>
-                </Popover>
-              </div>
-            </CardBody>
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src={FaceJWebb}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Christian Mike</h4>
-              <h6 className={classes.textMuted}>Web Developer</h6>
-              <p className={classes.cardDescription}>
-                I love you like Kanye loves Kanye. Don{"'"}t be scared of the
-                truth because we need to restart the human foundation.
-              </p>
-            </CardBody>
-          </Card>
-        </GridItem>
+
+      <GridContainer>
+        {TEAM_MEMBERS.map((member, i) => (
+          <GridItem key={i} md={3} sm={3}>
+            <TeamMemberCard  member={member} classes={classes}/>
+          </GridItem>
+        ))}
+
         <GridItem md={3} sm={3}>
           <Card profile plain>
             <CardAvatar profile plain>
@@ -192,6 +88,7 @@ export default function SectionTeam() {
             </CardBody>
           </Card>
         </GridItem>
+
         <GridItem md={3} sm={3}>
           <Card profile plain>
             <CardAvatar profile plain>
@@ -213,6 +110,7 @@ export default function SectionTeam() {
             </CardBody>
           </Card>
         </GridItem>
+
         <GridItem md={3} sm={3}>
           <Card profile plain>
             <CardAvatar profile plain>
@@ -234,6 +132,7 @@ export default function SectionTeam() {
             </CardBody>
           </Card>
         </GridItem>
+
         <GridItem md={3} sm={3}>
           <Card profile plain>
             <CardAvatar profile plain>
@@ -253,7 +152,7 @@ export default function SectionTeam() {
                 truth because we need to restart the human foundation.
               </p>
             </CardBody>
-            
+
           </Card>
         </GridItem>
       </GridContainer>
