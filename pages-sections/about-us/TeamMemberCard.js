@@ -17,6 +17,8 @@ const TeamMemberCard = ({ classes, member}) => {
     setAnchorEl(null);
   };
 
+  const popoverID = `${member.fullName} popover`
+
   return (
     <Card profile plain>
       <CardAvatar profile plain  variant="square" className={classes.square}>
@@ -31,11 +33,11 @@ const TeamMemberCard = ({ classes, member}) => {
           {member.bio_short}
         </p>
         <div>
-          <Button aria-describedby={id} variant="contained" color="white" onClick={handleClick}>
+          <Button aria-describedby={popoverID} variant="contained" color="white" onClick={handleClick}>
             Read More
           </Button>
           <Popover
-            id={`${member.fullName} popover`}
+            id={popoverID}
             open={Boolean(anchorEl)}
             anchorEl={anchorEl}
             onClose={handleClose}
