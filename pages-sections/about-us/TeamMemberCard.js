@@ -3,8 +3,8 @@ import Card from "../../components/Card/Card";
 import CardAvatar from "../../components/Card/CardAvatar";
 import CardBody from "../../components/Card/CardBody";
 import Button from "../../components/CustomButtons/Button";
+import Info from '../../components/Typography/Info';
 import Popover from '@material-ui/core/Popover';
-import Typography from '@material-ui/core/Typography';
 
 const TeamMemberCard = ({ classes, member}) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -30,7 +30,7 @@ const TeamMemberCard = ({ classes, member}) => {
         <h4 className={classes.cardTitle}>{member.fullName}</h4>
         <h6 className={classes.textMuted}>{member.title}</h6>
         <p className={classes.cardDescription}>
-          {member.bio_short}
+          {`${member.bio.slice(0, 49)}...`}
         </p>
         <div>
           <Button aria-describedby={popoverID} variant="contained" color="white" onClick={handleClick}>
@@ -53,9 +53,8 @@ const TeamMemberCard = ({ classes, member}) => {
               style: { width: '50%' },
             }}
           >
-            <Typography profile plain className={classes.popupDescription}>
-              {member.bio}
-            </Typography>
+            {member.bio.split('\n').map((paragraph, i) => <Info key={i} className={classes.popupDescription}>{paragraph}</Info>)}
+
           </Popover>
         </div>
       </CardBody>
