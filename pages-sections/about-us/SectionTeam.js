@@ -18,8 +18,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import teamStyle from "assets/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js";
 
 import FaceJWebb from "assets/img/faces/jwebb.jpg";
-import FaceJCole from "assets/img/faces/jeff-cole.jpg";
-import FaceJill from "assets/img/faces/jill-hodges.jpg";
+
 import FaceChelsie from "assets/img/faces/chelsie.jpg";
 import { lightGreen } from "@material-ui/core/colors";
 import TeamMemberCard from "./TeamMemberCard";
