@@ -4,23 +4,23 @@ import classNames from "classnames";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardAvatar from "components/Card/CardAvatar.js";
-import CardBody from "components/Card/CardBody.js";
-import Popover from '@material-ui/core/Popover';
-import Typography from '@material-ui/core/Typography';
+// import Card from "components/Card/Card.js";
+// import CardAvatar from "components/Card/CardAvatar.js";
+// import CardBody from "components/Card/CardBody.js";
+// import Popover from '@material-ui/core/Popover';
+// import Typography from '@material-ui/core/Typography';
 import { TEAM_MEMBERS } from "./constants";
 
-import Button from "components/CustomButtons/Button.js";
+// import Button from "components/CustomButtons/Button.js";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 import teamStyle from "assets/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js";
 
-import FaceJWebb from "assets/img/faces/jwebb.jpg";
+// import FaceJWebb from "assets/img/faces/jwebb.jpg";
 
-import FaceChelsie from "assets/img/faces/chelsie.jpg";
-import { lightGreen } from "@material-ui/core/colors";
+// import FaceChelsie from "assets/img/faces/chelsie.jpg";
+// import { lightGreen } from "@material-ui/core/colors";
 import TeamMemberCard from "./TeamMemberCard";
 
 const useStyles = makeStyles(teamStyle);
