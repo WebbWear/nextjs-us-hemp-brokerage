@@ -10,7 +10,7 @@ import GridItem from "components/Grid/GridItem.js";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import logo from "assets/img/logo.png";
+// import logo from "assets/img/logo.png";
 
 import cardsStyle from "assets/jss/nextjs-material-kit-pro/pages/presentationSections/cardsStyle.js";
 // import cardsTest from "assets/img/assets-for-demo/cards-test.png";
@@ -24,13 +24,13 @@ export default function SectionCards() {
       <div className={classes.container}>
         <GridContainer justify="center">
           
-          <div>
+          {/* <div>
             <img 
               src={logo}
               width="auto"
               height="auto"
                />
-          </div>
+          </div> */}
           
 
           {/* <GridItem

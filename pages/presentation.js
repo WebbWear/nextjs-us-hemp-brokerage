@@ -16,7 +16,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // sections for this page
 import SectionDescription from "pages-sections/presentation-page/SectionDescription.js";
-// import SectionComponents from "pages-sections/presentation-page/SectionComponents.js";
+import SectionComponents from "pages-sections/presentation-page/SectionComponents.js";
 import SectionCards from "pages-sections/presentation-page/SectionCards.js";
 import SectionContent from "pages-sections/presentation-page/SectionContent.js";
 import SectionSections from "pages-sections/presentation-page/SectionSections.js";
