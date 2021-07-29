@@ -333,7 +333,7 @@ const defaultBoxShadow = {
 const title = {
   color: grayColor[1],
   textDecoration: "none",
-  fontWeight: "700",
+  fontWeight: "300",
   marginTop: "30px",
   marginBottom: "25px",
   minHeight: "32px",

@@ -34,7 +34,7 @@ const presentationStyle = {
     textAlign: "center",
     "& h1": {
       fontSize: "4.2rem",
-      fontWeight: "700",
+      fontWeight: "300",
       display: "inline-block",
       position: "relative"
     }
